@@ -74,4 +74,21 @@ h2 {
     flex-wrap: wrap; /* Allow wrapping to the next line */
     justify-content: center; /* Center the boxes */
 }
+@media (max-width: 600px) {
+    .background-video {
+        /* Optional: Adjust styles for mobile */
+        object-fit: cover; /* Make sure it still covers the area */
+    }
 
+    h1 {
+        font-size: 2.5em; /* Adjust heading size */
+    }
+
+    p {
+        font-size: 1em; /* Adjust paragraph size */
+    }
+
+    .navigate-btn {
+        font-size: 1.2em; /* Adjust button size */
+    }
+}
