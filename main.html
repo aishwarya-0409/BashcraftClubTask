@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Events</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        body {
+            background: linear-gradient(to bottom, #000000, #004d00); 
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        
+        .icon-section {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .icon {
+            margin: 0 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .icon svg {
+            width: 50px;
+            height: 50px;
+            fill: white; 
+            transition: transform 0.3s;
+        }
+
+        .icon:hover svg {
+            transform: scale(1.1); 
+        }
+
+        
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #40C057; 
+        }
+
+        
+        .footer-section {
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #214a28; 
+        }
+
+       
+        .event {
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #40C057;
+            border-radius: 8px;
+            background-color: rgba(64, 192, 87, 0.1); 
+            flex: 1; 
+            min-width: 250px; 
+        }
+
+        
+        #previous-events {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center; 
+            margin-top: 40px;
+            margin-bottom: 40px; 
+        }
+
+        
+        #about-us h2 {
+            font-family: 'Georgia', serif; 
+            font-size: 2.5em; 
+            margin-bottom: 20px; 
+        }
+
+        
+        #upcoming-events {
+            margin-top: 20px; 
+        }
+
+       
+        #upcoming-events h2,
+        #previous-events h2 {
+           
+            font-size: 2em; 
+            color: #cdd4ce; 
+            margin-bottom: 40px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo Section -->
+        <div class="logo">
+            <a href="/">
+                <img src="https://bashcraft.vercel.app/_next/image?url=%2Fbash.png&w=640&q=75" alt="BashCraft Logo"/>
+            </a>
+        </div>
+
+        <!-- Header Content -->
+        <header>
+            <h1>Welcome to Bashcraft</h1>
+            <p>Spark your engineering, be an asli engineer</p>
+        </header>
+
+        <!-- Icon Section for About Us, Previous Events, Upcoming Events -->
+        <div class="icon-section">
+            <div class="icon" onclick="document.getElementById('about-us').scrollIntoView({ behavior: 'smooth' })">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 0a12 12 0 0 0-12 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0zm0 22c-5.523 0-10-4.477-10-10S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-14h2v5h-2zm0 7h2v2h-2z"/>
+                </svg>
+                <h3>About Us</h3>
+            </div>
+            <div class="icon" onclick="document.getElementById('previous-events').scrollIntoView({ behavior: 'smooth' })">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M3 3h18v2H3V3zm0 6h18v2H3V9zm0 6h18v2H3v-2zm0 6h18v2H3v-2z"/>
+                </svg>
+                <h3>Previous Events</h3>
+            </div>
+            <div class="icon" onclick="document.getElementById('upcoming-events').scrollIntoView({ behavior: 'smooth' })">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M19 3h-1V2h-2v1H8V2H6v1H5c-1.104 0-2 .896-2 2v16c0 1.104.896 2 2 2h14c1.104 0 2-.896 2-2V5c0-1.104-.896-2-2-2zm0 18H5V5h14v16z"/>
+                </svg>
+                <h3>Upcoming Events</h3>
+            </div>
+        </div>
+
+        <section id="about-us">
+            <h2>About Us</h2>
+            <div class="event">
+                <h3>Founded in 2024, BashCraft is a student-led initiative at VIT Bhopal focused on fostering technical innovation and creativity among students. 
+                 <h3></h3>   At BashCraft, our mission is to bridge the gap between theoretical knowledge and real-world execution.  Through engaging events, workshops, and hands-on projects, we offer students the chance to apply their skills and gain new ones in a practical, dynamic environment. Despite being a young club, our passion and drive have led us to successfully host both offline and online events, with our flagship event drawing over 300 in-person attendees! 
+                    As we grow, our commitment stays the same: building a culture of learning, creativity, and fun.  We’re dedicated to creating a space where students from all backgrounds can participate, share ideas, and collaborate with like-minded peers. Whether it’s brainstorming innovative solutions, hosting tech sessions, or competing in creative challenges, BashCraft is shaping the future of tech and innovation at VIT Bhopal—one event at a time! 🌟🔧</h3>
+            </div>
+        </section>
+
+        <!-- Previous Events Section -->
+        <section id="previous-events">
+            <h2>Previous Events</h2>
+
+            <!-- Asli Engineering & Zerodha Finance Webinar -->
+            <div class="event">
+                <h3>Asli Engineering and The Zerodha Finance Webinar with Invest-a-thon</h3>
+                <p><strong>Date:</strong> 24th February, 2024</p>
+                <p>In the first few months of our launch, we organized two major events: Asli Engineering and The Zerodha Finance Webinar with Invest-a-thon. Both were highly successful, with the latter attracting over 300 offline participants, showcasing the strength of our execution.</p>
+            </div>
+
+            <!-- Arpit Bhayani Webinar -->
+            <div class="event">
+                <h3>Arpit Bhayani Webinar</h3>
+                <p><strong>Date:</strong> 24th February, 2024</p>
+                <p>Join us for an engaging conversation with Arpit Bhayani, who has made a remarkable journey from being a Staff Engineer at Google’s Dataproc to the Director of Engineering at Unacademy, and now the CTO of Duggup! We’ll explore job opportunities, key skills for success, and the latest trends in technology in an open and welcoming environment.</p>
+            </div>
+        </section>
+
+        <!-- Upcoming Events Section -->
+        <section id="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <div class="event">
+                <!-- A BashCraft Hackathon -->
+            <div class="event">
+                <h3>A BashCraft Hackathon</h3>
+                <p><strong>Date:</strong> Will be updated soon!</p>
+                <p>Tackle innovative problem statements and present unique solutions.
+                    Stand out among the best and win fantastic prizes and rewards.
+                    Network and build valuable connections with industry leaders and peers.Join us for an exciting hackathon event where students can showcase their skills, collaborate, and innovate. Stay tuned for more details!</p>
+            </div>
+        </section>
+        
+        <!-- Footer Section with Links and Social Icons -->
+        <div class="footer-section">
+            <h3>Social Media Links</h3>
+
+            <!-- Social Media Links -->
+            <div class="social-icons mt-4">
+                <a href="https://www.linkedin.com/company/bashcraft/" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect width="4" height="12" x="2" y="9"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <a href="https://github.com/BashCraftClub" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/bashcraft.vit/" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+        <!-- Footer Section -->
+        <div class="footer-section">
+            <p>&copy; 2024 BashCraft | <a href="#terms" style="color: white;">Terms & Conditions</a> | <a href="#privacy" style="color: white;">Privacy Policy</a></p>
+        </div>
+    </div>
+</body>
+</html>
+        
+    

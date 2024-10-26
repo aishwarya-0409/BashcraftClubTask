@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to BashCraft</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            color: white;
+            overflow: hidden;
+            position: relative; 
+        }
+
+        
+        .welcome-container {
+            text-align: center;
+            animation: fadeIn 2s ease;
+            position: relative; 
+            z-index: 1; 
+        }
+
+        
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            animation: slideIn 1.5s ease;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            animation: slideIn 2s ease forwards;
+        }
+
+        
+        .navigate-btn {
+            padding: 15px 30px;
+            font-size: 1.5em;
+            color: white;
+            background-color: #40C057;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .navigate-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(64, 192, 87, 0.6);
+        }
+
+        
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            z-index: 0; 
+        }
+
+        /* Keyframe animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(20px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+    </style>
+</head>
+<body>
+    <video class="background-video" autoplay muted loop>
+        <source src="b2.mp4" type="video/mp4"> 
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="welcome-container">
+        <h1>Welcome to BashCraft</h1>
+        <p>Spark your engineering journey</p>
+        <button class="navigate-btn" onclick="location.href='main.html'">Enter</button>
+    </div>
+</body>
+</html>

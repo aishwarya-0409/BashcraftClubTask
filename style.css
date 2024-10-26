@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+section {
+    padding: 2em;
+}
+
+h2 {
+    border-bottom: 2px solid #36c434;
+    padding-bottom: 0.5em;
+}
+
+.event {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 1em;
+    }
+
+    .event {
+        margin-bottom: 1.5em;
+    }
+}
+
+/* About Us Section Font */
+#about-us h2 {
+    font-family: 'Georgia', serif; /* Change font for About Us heading */
+    font-size: 2.5em; /* Increase font size for visibility */
+    margin-bottom: 20px; /* Add space below heading */
+}
+#previous-events h2  {
+    font-family: 'Georgia', serif; /* Change font for About Us heading */
+    font-size: 2.5em; /* Increase font size for visibility */
+    margin-bottom: 20px; /* Add space below heading */
+}
+
+#about-us h3 {
+    font-family: 'Arial', sans-serif; /* Change font for About Us information */
+    font-size: 1.2em; /* Set a suitable font size for the information */
+    line-height: 1.6; /* Improve readability with line height */
+    color: white; /* Ensure text color contrasts with the background */
+}
+/* Previous Events Section */
+#previous-events {
+    margin: 40px 0; /* Add space above and below */
+}
+
+#previous-events h2 {
+    font-size: 2em; /* Increase font size for visibility */
+    color: #f0fff2; /* Change color to make it stand out */
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Add space below heading */
+}
+
+/* Flexbox layout for previous events */
+.previous-events-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: center; /* Center the boxes */
+}
+
