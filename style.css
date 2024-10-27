@@ -143,4 +143,11 @@ h2 {
         object-fit: contain; /* Ensures video scales correctly on mobile */
     }
 }
-
+@media only screen and (max-width: 768px) {
+    #background-video {
+        display: none;
+    }
+    body {
+        background: url('path-to-fallback-image.jpg') center center / cover no-repeat;
+    }
+}
