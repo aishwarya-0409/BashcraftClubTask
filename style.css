@@ -38,6 +38,33 @@ h2 {
     }
 }
 
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .icon-section {
+        flex-direction: column;
+    }
+
+    .icon {
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    #about-us h2,
+    #upcoming-events h2,
+    #previous-events h2 {
+        font-size: 1.5em;
+    }
+
+    .event {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+
 /* About Us Section Font */
 #about-us h2 {
     font-family: 'Georgia', serif; /* Change font for About Us heading */
