@@ -103,7 +103,7 @@ h2 {
 }
 @media (max-width: 600px) {
     .background-video {
-        /* Optional: Adjust styles for mobile */
+        
         object-fit: cover; /* Make sure it still covers the area */
     }
 
@@ -119,3 +119,28 @@ h2 {
         font-size: 1.2em; /* Adjust button size */
     }
 }
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: black; /* fallback color for mobile */
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .video-container video {
+        display: block;
+        object-fit: contain; /* Ensures video scales correctly on mobile */
+    }
+}
+
